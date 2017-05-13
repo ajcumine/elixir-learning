@@ -10,10 +10,10 @@ config :messengyr,
   ecto_repos: [Messengyr.Repo]
 
 # Configures the endpoint
-config :messengyr, Messengyr.Endpoint,
+config :messengyr, Messengyr.Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "5a/pOjQRNVs3PkjpspyMXtmzgPgSNck7JyjKzQTEnTqVp3+ghE7JBj3n1d/6Sejz",
-  render_errors: [view: Messengyr.ErrorView, accepts: ~w(html json)],
+  secret_key_base: "7CJUIqCF694+aAzRsAb51vigYuujw1HCClg8VMBREM+fmfyuda89OG6mxUZS5z+k",
+  render_errors: [view: Messengyr.Web.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Messengyr.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
