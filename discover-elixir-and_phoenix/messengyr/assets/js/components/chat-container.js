@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import ChatMessage from './chat-message';
 
-export default class ChatContainer extends React.Component {
+class ChatContainer extends React.Component {
   render() {
     const messages = this.props.messages.map((message) => (
       <ChatMessage
@@ -23,3 +23,9 @@ export default class ChatContainer extends React.Component {
     )
   }
 }
+
+ChatContainer.defaultProps = {
+  messages: [],
+};
+
+export default ChatContainer;

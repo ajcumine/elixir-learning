@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import MenuMessage from './menu-message';
 
-export default class MenuContainer extends React.Component {
+class MenuContainer extends React.Component {
   render() {
 
     const rooms = this.props.rooms.map((room) => (
@@ -27,3 +27,9 @@ export default class MenuContainer extends React.Component {
     )
   }
 }
+
+MenuContainer.defaultProps = {
+  rooms: [],
+};
+
+export default MenuContainer;

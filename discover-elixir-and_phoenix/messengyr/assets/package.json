@@ -6,10 +6,12 @@
     "watch": "brunch watch --stdin"
   },
   "dependencies": {
+    "moment": "^2.18.1",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel": "^6.23.0",
